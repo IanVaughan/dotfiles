@@ -8,8 +8,14 @@
   ci = commit -v
   br = branch
   st = status
+  ri = !git rebase -i
+ 
 [color]
   diff = auto
   status = auto
   branch = auto
   interactive = auto
+[push]
+	default = current
+[core]
+	editor = /usr/bin/vim
