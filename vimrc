@@ -19,6 +19,7 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required!
 
@@ -56,20 +57,16 @@ if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor
 endif
 
-
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
 " Color scheme
-"colorscheme github
-"highlight NonText guibg=#060606
-"highlight Folded  guibg=#0A0A0A guifg=#9090D0
 syntax enable
 set background=dark
-"let g:solarized_termcolors=256
-"let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 colorscheme solarized
+let g:airline_powerline_fonts = 1
 
 " Snippets are activated by Shift+Tab
 "let g:snippetsEmu_key = "<S-Tab>"
@@ -78,7 +75,6 @@ colorscheme solarized
 "set wildmode=list:longest,list:full
 "set complete=.,w,t
 
-
 " http://nvie.com/posts/how-i-boosted-my-vim/
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -86,4 +82,5 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 set hidden
 
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
