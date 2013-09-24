@@ -44,3 +44,8 @@ export PATH="/usr/local/heroku/bin:/home/ian/.rbenv/shims:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export PATH="$HOME/bin:$PATH"
+
+export AWS_CREDENTIAL_FILE=$HOME/.aws-credentials-master
+
