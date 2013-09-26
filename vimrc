@@ -84,3 +84,8 @@ set hidden
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * set cursorline
+  autocmd WinLeave * set nocursorline
+augroup END
