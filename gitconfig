@@ -19,3 +19,5 @@
 	default = current
 [core]
 	editor = /usr/bin/vim
+[pager]
+	stash = false
