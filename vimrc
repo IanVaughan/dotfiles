@@ -89,3 +89,6 @@ augroup BgHighlight
   autocmd WinEnter * set cursorline
   autocmd WinLeave * set nocursorline
 augroup END
+
+set colorcolumn=80
+
