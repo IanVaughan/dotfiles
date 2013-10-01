@@ -76,8 +76,10 @@ let g:airline_powerline_fonts = 1
 
 " http://nvie.com/posts/how-i-boosted-my-vim/
 " Quickly edit/reload the vimrc file
+" ev : edit vim (load)
+" sv : save vim (apply)
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+autocmd bufwritepost .vimrc source $MYVIMRC
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
