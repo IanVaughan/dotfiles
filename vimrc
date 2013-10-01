@@ -45,7 +45,8 @@ set shiftwidth=2
 set expandtab
 
 " Display extra whitespace
-set list 
+set list
+set hidden
 set listchars=tab:»·,trail:·
 
 set mouse=a
@@ -77,8 +78,6 @@ let g:airline_powerline_fonts = 1
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
-set hidden
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
