@@ -36,6 +36,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Disable shared history
+unsetopt share_history
+
 # Customize to your needs...
 # export PATH=/home/ian/.rbenv/shims:/home/ian/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
