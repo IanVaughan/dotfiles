@@ -91,3 +91,8 @@ augroup END
 
 set colorcolumn=80
 
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+autocmd BufWritePre     *.rb :call TrimWhiteSpace()
+
