@@ -64,3 +64,8 @@ export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
 # My secrets
 . ~/.zshrc-private
 
+
+export RUBY_HEAP_MIN_SLOTS=2000000
+export RUBY_HEAP_FREE_MIN=20000
+export RUBY_GC_MALLOC_LIMIT=100000000
+
