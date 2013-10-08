@@ -49,6 +49,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/share/npm/bin:$PATH"
 
 export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
 export AWS_CREDENTIAL_FILE=$HOME/.aws-credentials-master
