@@ -1,23 +1,34 @@
 [user]
-	email = github@ianvaughan.co.uk
 	name = Ian Vaughan
+  email = github@ianvaughan.co.uk
+
 [color]
 	ui = auto
+
 [alias]
   co = checkout
   ci = commit -v
   br = branch
   st = status
-  ri = !git rebase -i
- 
+  ri = rebase -i
+  # graph log of head branch
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(yellow)%an%Creset' --abbrev-commit --date=relative
+  # graph log of all branches
+  la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(yellow)%an%Creset' --abbrev-commit --all --date=relative
+
 [color]
+  ui = true
   diff = auto
   status = auto
   branch = auto
   interactive = auto
+
 [push]
 	default = current
+
 [core]
-	editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
+	editor = vim
+
 [pager]
 	stash = false
