@@ -1,0 +1,15 @@
+" https://github.com/gmarik/vundle
+filetype off                   " required! vundle
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Solarized'
+Bundle 'bling/vim-airline'
+Bundle 'mileszs/ack.vim.git'
+Bundle 'kien/ctrlp.vim.git'
+Bundle 'airblade/vim-gitgutter.git'
+Bundle 'junegunn/vim-emoji.git'
+Bundle 'tpope/vim-unimpaired.git'
+Bundle 'thoughtbot/vim-rspec'

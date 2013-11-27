@@ -1,6 +1,7 @@
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/vimrc.bundles ~/.vimrc.bundles
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/zshrc-private ~/.zshrc-private
