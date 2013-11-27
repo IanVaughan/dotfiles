@@ -6,22 +6,14 @@ filetype off                   " required! vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'Solarized'
 Bundle 'bling/vim-airline'
 Bundle 'mileszs/ack.vim.git'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'airblade/vim-gitgutter.git'
-Bundle 'greggroth/vim-cucumber-folding'
 Bundle 'junegunn/vim-emoji.git'
 Bundle 'tpope/vim-unimpaired.git'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-"Bundle 'L9'
 "Bundle 'thoughtbot/vim-rspec'
 
 filetype plugin indent on     " required!
