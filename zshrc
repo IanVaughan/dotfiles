@@ -5,59 +5,38 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="../../dotfiles/alanpeabody-ianv"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+ZSH_THEME="miloshadzic"
+#ZSH_THEME="gentoo"
+#ZSH_THEME="simple"
+#ZSH_THEME="smt"
+# ZSH_THEME="wuffers"
+#x ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+DEFAULT_USER=ian
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
+CASE_SENSITIVE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment following line if you want to disable marking untracked files under
-# VCS as dirty. This makes repository status check for large repositories much,
-# much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+COMPLETION_WAITING_DOTS="true"
 
 source $ZSH/oh-my-zsh.sh
 
 # Disable shared history
 unsetopt share_history
 
-# Customize to your needs...
-# export PATH=/home/ian/.rbenv/shims:/home/ian/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:/home/ian/.rbenv/shims:$PATH"
-
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+#export PROJECTS="$HOME/Projects"
+#export PATH="$PROJECTS/governor/bin:$PATH"
+export PATH="./bin:$PATH"
+#export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 
 export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
 export AWS_CREDENTIAL_FILE=$HOME/.aws-credentials-master
@@ -70,13 +49,24 @@ export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
 
+# Whats the time Mr Wolf (but with better formatting)
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 
 # My secrets
 . ~/.zshrc-private
 
-
+# Faster build times
 export RUBY_HEAP_MIN_SLOTS=2000000
 export RUBY_HEAP_FREE_MIN=20000
 export RUBY_GC_MALLOC_LIMIT=100000000
+
+#alias zeus='nocorrect zeus'
+#alias rspec='zeus rspec'
+alias vim="mvim -v"
+
+export LANG=en_US.UTF-8
+
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
 
