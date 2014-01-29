@@ -1,9 +1,9 @@
 [user]
-	name = Ian Vaughan
+  name = Ian Vaughan
   email = github@ianvaughan.co.uk
 
 [color]
-	ui = auto
+  ui = auto
 
 [alias]
   co = checkout
@@ -24,11 +24,11 @@
   interactive = auto
 
 [push]
-	default = current
+  default = current
 
 [core]
   excludesfile = ~/.gitignore
-	editor = vim
+  editor = vim
 
 [pager]
-	stash = false
+  stash = false
