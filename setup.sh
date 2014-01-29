@@ -8,3 +8,4 @@ ln -s ~/dotfiles/zshrc-private ~/.zshrc-private
 ln -s ~/dotfiles/gemrc ~/.gemrc
 ln -s ~/dotfiles/irbrc ~/.irbrc
 ln -s ~/dotfiles/rspec ~/.rspec
+ln -s ~/dotfiles/screenrc ~/.screenrc
