@@ -10,7 +10,7 @@
   ci = commit -v
   br = branch
   st = status
-  ri = rebase -i
+  ri = rebase -i --autosquash
   # graph log of head branch
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(yellow)%an%Creset' --abbrev-commit --date=relative
   # graph log of all branches
