@@ -65,3 +65,6 @@
 
 [pager]
   stash = false
+
+[git-up "bundler"]
+  check = true
