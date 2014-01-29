@@ -47,9 +47,6 @@ endif
 " Color scheme
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
-let g:airline_powerline_fonts = 1
 
 " Snippets are activated by Shift+Tab
 "let g:snippetsEmu_key = "<S-Tab>"
