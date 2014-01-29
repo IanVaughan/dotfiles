@@ -15,6 +15,10 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set hlsearch
 set laststatus=2  " Always display the status line
+set showmatch
+set ignorecase smartcase
+set cursorline
+set cmdheight=1
 
 " Numbers
 set number
@@ -54,6 +58,17 @@ set background=dark
 " Tab completion options
 "set wildmode=list:longest,list:full
 "set complete=.,w,t
+" use emacs-style tab completion when selecting files, etc
+set wildmode=longest,list
+" make tab completion for files/buffers act like bash
+set wildmenu
+
+map <leader>y "*y
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " http://nvie.com/posts/how-i-boosted-my-vim/
 " Quickly edit/reload the vimrc file
