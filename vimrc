@@ -20,9 +20,6 @@ set laststatus=2  " Always display the status line
 set number
 set numberwidth=5
 
-" default \
-"let mapleader=","
-
 " https://github.com/IanVaughan/dotfiles/blob/master/vimrc
 " Softtabs, 2 spaces
 set tabstop=2
@@ -43,6 +40,8 @@ endif
 
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
+  " default \
+  let mapleader=","
 endif
 
 " Color scheme
