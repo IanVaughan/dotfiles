@@ -4,3 +4,4 @@ vendor/
 .tags
 .gemtags
 .xrayconfig
+.projects
