@@ -108,8 +108,10 @@ augroup END
 
 set colorcolumn=80
 
+" Strip whitespace on save
 function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
-autocmd BufWritePre     *.rb :call TrimWhiteSpace()
+autocmd BufWritePre     *.rb,*.scss,*.erb,*.js,*.md :call TrimWhiteSpace()
+
 
