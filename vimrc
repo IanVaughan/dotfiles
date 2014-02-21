@@ -60,6 +60,18 @@ highlight VimLineComment cterm=NONE ctermfg=240 ctermbg=NONE
 highlight Comment ctermfg=240
 hi SpellBad cterm=undercurl ctermbg=NONE ctermfg=NONE
 
+" Airline
+" TODO: get airline bar to hide crap, eg filetype(vim/ruby), file mode (utf8)
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme             = 'powerlineish'
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
+function! AirlineInit()
+  let g:airline_section_b = airline#section#create([])
+  let g:airline_section_x = airline#section#create([])
+  let g:airline_section_y = airline#section#create([])
+endfunction
+autocmd VimEnter * call AirlineInit()
 
 " Snippets are activated by Shift+Tab
 "let g:snippetsEmu_key = "<S-Tab>"
