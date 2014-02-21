@@ -52,6 +52,14 @@ endif
 " Color scheme
 syntax enable
 set background=dark
+let g:solarized_termcolors=16 " needed
+let g:airline_powerline_fonts = 1
+colorscheme solarized
+highlight Comment cterm=NONE ctermfg=240 ctermbg=NONE
+highlight VimLineComment cterm=NONE ctermfg=240 ctermbg=NONE
+highlight Comment ctermfg=240
+hi SpellBad cterm=undercurl ctermbg=NONE ctermfg=NONE
+
 
 " Snippets are activated by Shift+Tab
 "let g:snippetsEmu_key = "<S-Tab>"
