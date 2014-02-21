@@ -64,7 +64,8 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 #alias rspec='zeus rspec'
 alias vim="mvim -v"
 
-export LANG=en_US.UTF-8
+export LC_ALL=en_US.utf-8
+export LANG="$LC_ALL"
 
 bindkey -e
 bindkey '^[[1;9C' forward-word
