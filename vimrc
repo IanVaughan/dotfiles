@@ -114,4 +114,22 @@ function! TrimWhiteSpace()
 endfunction
 autocmd BufWritePre     *.rb,*.scss,*.erb,*.js,*.md :call TrimWhiteSpace()
 
+" CtrlP settings
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bin|vendor)$'
+let g:ctrlp_max_files = 0 " no limit on number of files to search!
+let g:ctrlp_max_depth = 1000 " max dir depth (doesnt seem to be a 0 option)
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_height = 20
+" let g:ctrlp_regexp = 1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,vendor/
+set wildignore+=tags
+set wildignore+=*/tmp/*
+set wildignore+=*/vendor/*
+set wildignore+=*/spec/vcr/*
+set wildignore+=*/public/*
+set wildignore+=*/chef/*
+set wildignore+=*/coverage/*
+set wildignore+=*.png,*.jpg,*.otf,*.woff,*.jpeg,*.orig
+
 
