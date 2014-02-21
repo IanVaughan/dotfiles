@@ -19,6 +19,7 @@ set showmatch
 set ignorecase smartcase
 set cursorline
 set cmdheight=1
+set nowrap
 
 " Numbers
 set number
