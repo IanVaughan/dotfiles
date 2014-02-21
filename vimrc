@@ -141,4 +141,12 @@ set foldnestmax=10      "deepest fold is 10 levels
 set foldenable
 set foldlevel=20        " show everything unfolded
 
+" Spelling
+setlocal spell spelllang=en_gb
+nnoremap <leader>ss z=
+nnoremap <leader>sn ]s
+" add to dic
+nnoremap <leader>sg zg
+set complete+=kspell
+set spell
 
