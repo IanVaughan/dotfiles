@@ -54,3 +54,4 @@
 
 [git-up "bundler"]
   check = true
+  autoinstall = true
