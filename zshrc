@@ -65,7 +65,6 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 alias vim="mvim -v"
 
 export LC_ALL=en_US.utf-8
-export LANG="$LC_ALL"
 
 bindkey -e
 bindkey '^[[1;9C' forward-word
