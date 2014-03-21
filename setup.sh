@@ -10,3 +10,4 @@ ln -s ~/dotfiles/gemrc ~/.gemrc
 ln -s ~/dotfiles/irbrc ~/.irbrc
 ln -s ~/dotfiles/rspec ~/.rspec
 ln -s ~/dotfiles/screenrc ~/.screenrc
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
