@@ -55,3 +55,5 @@
 [git-up "bundler"]
   check = true
   autoinstall = true
+[help]
+	autocorrect = 1
