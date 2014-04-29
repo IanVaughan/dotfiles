@@ -32,14 +32,10 @@ eval "$(rbenv init -)"
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 
-#export PROJECTS="$HOME/Projects"
-#export PATH="$PROJECTS/governor/bin:$PATH"
 export PATH="./bin:$PATH"
 #export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-
 export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
-export AWS_CREDENTIAL_FILE=$HOME/.aws-credentials-master
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 export AWS_IAM_HOME="/usr/local/opt/aws-iam-tools/jars"
 export AWS_RDS_HOME="/usr/local/Cellar/rds-command-line-tools/1.14.001/libexec"
@@ -60,8 +56,6 @@ export RUBY_HEAP_MIN_SLOTS=2000000
 export RUBY_HEAP_FREE_MIN=20000
 export RUBY_GC_MALLOC_LIMIT=100000000
 
-#alias zeus='nocorrect zeus'
-#alias rspec='zeus rspec'
 alias vim="mvim -v"
 
 export LC_ALL=en_US.utf-8
