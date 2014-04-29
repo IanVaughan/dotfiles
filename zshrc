@@ -66,3 +66,6 @@ bindkey '^[[1;9D' backward-word
 
 export EDITOR='vim'
 export BUNDLER_EDITOR=vim
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
