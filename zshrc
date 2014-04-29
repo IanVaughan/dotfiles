@@ -69,3 +69,6 @@ export BUNDLER_EDITOR=vim
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# super vi mode! http://dougblack.io/words/zsh-vi-mode.html
+bindkey -v
