@@ -45,6 +45,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
+# https://github.com/jimeh/tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+source "$HOME/dotfiles/tmuxifier/env.sh"
 
 export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
