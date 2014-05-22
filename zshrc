@@ -25,15 +25,26 @@ source $ZSH/oh-my-zsh.sh
 # Disable shared history
 unsetopt share_history
 
+## PATHS
+###########################################################
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# My local shortcut scripts
 export PATH="$HOME/bin:$PATH"
+
 export PATH="/usr/local/share/npm/bin:$PATH"
 
+# Any project binstubs
 export PATH="./bin:$PATH"
+
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 #export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
 
 export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
@@ -66,9 +77,6 @@ bindkey '^[[1;9D' backward-word
 
 export EDITOR='vim'
 export BUNDLER_EDITOR=vim
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # super vi mode! http://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
