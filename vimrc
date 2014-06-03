@@ -150,3 +150,4 @@ nnoremap <leader>sg zg
 set complete+=kspell
 set spell
 
+autocmd QuickFixCmdPost *grep* cwindow
