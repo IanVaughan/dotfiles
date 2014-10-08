@@ -10,6 +10,7 @@ if initialize_session "Econsultancy"; then
   load_window "zeus"
   load_window "death_star"
   load_window "governor"
+  load_window "puppet"
 
   # Create a new window inline within session layout definition.
   new_window "misc"
