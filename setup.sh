@@ -4,6 +4,7 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vimrc.bundles ~/.vimrc.bundles
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/pryrc ~/.pryrc
 cp ~/dotfiles/zshrc-private.example ~/.zshrc-private
 echo "Paste your campfire token into ~/.zshrc-private"
 ln -s ~/dotfiles/gemrc ~/.gemrc
