@@ -98,6 +98,8 @@ nnoremap <c-l> <c-w>l
 " ev : edit vim (load)
 " sv : save vim (apply)
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>et :e ~/.tmux.conf<CR>
+nmap <silent> <leader>ez :e ~/.zshrc<CR>
 autocmd bufwritepost .vimrc source $MYVIMRC
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
