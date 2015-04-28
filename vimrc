@@ -16,16 +16,18 @@ set incsearch     " do incremental searching
 set hlsearch
 set laststatus=2  " Always display the status line
 set showmatch
-set ignorecase smartcase
-set cursorline
 set cmdheight=1
 set nowrap
+set autoindent
+set smartindent
+set backspace=indent,eol,start
 
 " Numbers
 set number
 set numberwidth=5
+set ignorecase                  " searches are case insensitive...
+set smartcase                   " ... unless they contain at least one capital letter
 
-" https://github.com/IanVaughan/dotfiles/blob/master/vimrc
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
