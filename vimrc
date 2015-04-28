@@ -66,7 +66,6 @@ highlight Comment ctermfg=240
 hi SpellBad cterm=undercurl ctermbg=NONE ctermfg=NONE
 
 " Airline
-" TODO: get airline bar to hide crap, eg filetype(vim/ruby), file mode (utf8)
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme             = 'powerlineish'
 let g:airline_enable_branch     = 1
@@ -113,7 +112,8 @@ augroup BgHighlight
   autocmd WinLeave * set nocursorline
 augroup END
 
-set colorcolumn=80
+" Column (safe)
+set colorcolumn=120
 
 " Strip whitespace on save
 function! TrimWhiteSpace()
