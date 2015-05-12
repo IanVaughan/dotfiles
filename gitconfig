@@ -57,3 +57,5 @@
   autoinstall = true
 [help]
 	autocorrect = 1
+[git-up "rebase"]
+	auto = false
