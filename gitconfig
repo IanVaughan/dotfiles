@@ -2,9 +2,6 @@
   name = Ian Vaughan
   email = github@ianvaughan.co.uk
 
-[color]
-  ui = auto
-
 [alias]
   co = checkout
   ci = commit --verbose
