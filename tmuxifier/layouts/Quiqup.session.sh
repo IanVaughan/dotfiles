@@ -1,22 +1,26 @@
 # Set a custom session root path. Default is `$HOME`.
 # Must be called before `initialize_session`.
-#session_root "~/Projects/Econsultancy"
+session_root "~/Projects"
 
 # Create session with specified name if it does not already exist. If no
 # argument is given, session name will be based on layout file name.
-if initialize_session "Econsultancy"; then
+if initialize_session "Quiqup"; then
 
   # Load a defined window layout.
-  load_window "zeus"
-  load_window "death_star"
-  load_window "governor"
-  load_window "puppet"
+  load_window "api-dev"
+  load_window "api-rails"
+  load_window "realtime-app"
+  load_window "realtime-node"
+  load_window "sidekiq-worker"
+  load_window "insights"
 
   # Create a new window inline within session layout definition.
-  new_window "misc"
+  # new_window "misc"
+ 
+  # tmux split-window -t "$session:$window.0" -v -p 50
 
   # Select the default active window on session creation.
-  select_window 2
+  select_window 1
 fi
 
 # Finalize session creation and switch/attach to it.
