@@ -19,6 +19,8 @@ source $ZSH/oh-my-zsh.sh
 # Disable shared history
 unsetopt share_history
 
+plugins=(git ruby docker)
+
 ## PATHS
 ###########################################################
 # rbenv
