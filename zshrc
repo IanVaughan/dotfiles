@@ -70,3 +70,10 @@ export DOCKER_TLS_VERIFY=1
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
+alias v="vagrant"
+alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
+
+export DOCKER_MACHINE_NAME=quiqupapi
+eval "$(docker-machine env ${DOCKER_MACHINE_NAME})"
