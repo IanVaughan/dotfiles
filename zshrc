@@ -23,6 +23,8 @@ plugins=(git ruby docker)
 
 ## PATHS
 ###########################################################
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -36,13 +38,12 @@ export PATH="$HOME/bin:$PATH"
 export PATH="./bin:$PATH"
 
 #export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/bin:$PATH"
 
-# https://github.com/jimeh/tmuxifier
 source "$HOME/dotfiles/tmuxifier/env.sh"
 
 export PATH="$HOME/.tmuxifier/bin:$PATH"
-source "$HOME/dotfiles/tmuxifier/env.sh"
+# source "$HOME/dotfiles/tmuxifier/env.sh"
 
 # Brew
 export PATH="/usr/local/sbin:$PATH"
@@ -60,7 +61,7 @@ export EDITOR='vim'
 export BUNDLER_EDITOR=vim
 
 # super vi mode! http://dougblack.io/words/zsh-vi-mode.html
-bindkey -v
+# bindkey -v
 
 # Docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
