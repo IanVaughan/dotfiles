@@ -30,25 +30,25 @@ eval "$(rbenv init -)"
 # My local shortcut scripts
 export PATH="$HOME/bin:$PATH"
 
-export PATH="/usr/local/share/npm/bin:$PATH"
+# export PATH="/usr/local/share/npm/bin:$PATH"
 
 # Any project binstubs
 export PATH="./bin:$PATH"
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 #export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # https://github.com/jimeh/tmuxifier
+source "$HOME/dotfiles/tmuxifier/env.sh"
+
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 source "$HOME/dotfiles/tmuxifier/env.sh"
 
+# Brew
+export PATH="/usr/local/sbin:$PATH"
+
 # What the time Mr Wolf (but with better formatting)
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
-
-alias vim="mvim -v"
 
 export LC_ALL=en_US.utf-8
 
