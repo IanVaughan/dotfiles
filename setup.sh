@@ -12,3 +12,4 @@ ln -s ~/dotfiles/rspec ~/.rspec
 ln -s ~/dotfiles/screenrc ~/.screenrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/ctags ~/.ctags
+ln -s ~/dotfiles/ctagsignore ~/.ctagsignore

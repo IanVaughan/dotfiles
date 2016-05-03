@@ -19,6 +19,8 @@
   #ds = diff --stat=160,120
   #dh1 = diff HEAD~1
   dm = !git l ...master -p
+  shas = log ...master --pretty=format:"%H"
+  # rshas = !git --no-pager log ...master --pretty=format:"%H"; echo "" | tail -r
 
   head = !git l -1
   h = !git head
@@ -43,16 +45,32 @@
   default = current
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/ian/.gitignore
   editor = vim
+	autocrlf = input
 
 [pager]
   stash = false
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
 
-[git-up "bundler"]
-  check = true
-  autoinstall = true
 [help]
 	autocorrect = 1
+
+[git-up "bundler"]
+	check = true
+  autoinstall = true
 [git-up "rebase"]
 	auto = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[git-up "fetch"]
+	prune = true
