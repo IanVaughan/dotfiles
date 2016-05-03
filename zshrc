@@ -66,3 +66,5 @@ export DOCKER_CERT_PATH=/Users/ian/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
