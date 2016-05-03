@@ -46,11 +46,6 @@ source "$HOME/dotfiles/tmuxifier/env.sh"
 # What the time Mr Wolf (but with better formatting)
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 
-# Faster build times
-export RUBY_HEAP_MIN_SLOTS=2000000
-export RUBY_HEAP_FREE_MIN=20000
-export RUBY_GC_MALLOC_LIMIT=100000000
-
 alias vim="mvim -v"
 
 export LC_ALL=en_US.utf-8
