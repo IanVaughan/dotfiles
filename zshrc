@@ -69,12 +69,15 @@ export DOCKER_CERT_PATH=/Users/ian/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+# . "$(brew --prefix nvm)/nvm.sh"
+. "/usr/local/opt/nvm/nvm.sh"
 
 alias v="vagrant"
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
 
-export DOCKER_MACHINE_NAME=quiqupapi
-eval "$(docker-machine env ${DOCKER_MACHINE_NAME})"
+# export DOCKER_MACHINE_NAME=quiqup
+# eval "$(docker-machine env ${DOCKER_MACHINE_NAME})"
+
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
