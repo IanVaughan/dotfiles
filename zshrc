@@ -25,10 +25,6 @@ plugins=(git ruby docker)
 ###########################################################
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # My local shortcut scripts
 export PATH="$HOME/bin:$PATH"
 
