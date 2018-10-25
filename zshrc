@@ -64,9 +64,10 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/ian/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
-export NVM_DIR="$HOME/.nvm"
+# Node Version Man
+# export NVM_DIR="$HOME/.nvm"
 # . "$(brew --prefix nvm)/nvm.sh"
-. "/usr/local/opt/nvm/nvm.sh"
+# . "/usr/local/opt/nvm/nvm.sh"
 
 alias v="vagrant"
 alias d="docker"
